@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [
+        {name:'张三',sex:'女',phone:'123456',jiguan:'山西忻州',birthday:'1997年11月07日'},
+        {name:'李四',sex:'女',phone:'123456',jiguan:'山西忻州',birthday:'1997年11月07日'},
+        {name:'王五',sex:'女',phone:'123456',jiguan:'山西忻州',birthday:'1997年11月07日'},
+        {name:'赵六',sex:'女',phone:'123456',jiguan:'山西忻州',birthday:'1997年11月07日'},
+        {name:'郑七',sex:'女',phone:'123456',jiguan:'山西忻州',birthday:'1997年11月07日'},
+    ];
+    localStorage.setItem('students',JSON.stringify(arr));
+    let result = JSON.parse(localStorage.getItem('students'));
+//    let result = JSON
+    console.dir(result);
+</script>
+</body>
+</html>
